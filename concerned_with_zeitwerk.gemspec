@@ -34,7 +34,4 @@ Gem::Specification.new do |spec|
 
   # Add new dependency of your gem
   spec.add_dependency "rails", ">= 4.2"
-  spec.add_dependency "rake", "~> 13.0"
-  spec.add_development_dependency  "rspec", "~> 3.0"
-  spec.add_development_dependency  "rubocop", "~> 1.21"
 end
