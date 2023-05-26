@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.email = ["ruban.thilak@freshworks.com"]
 
   spec.summary = "concerned_with for Zeitwerk mode !"
-  spec.description = "concerned_with for Zeitwerk mode !"
+  spec.description = "concerned_with method can be used for code spliting in model files"
   spec.homepage = "https://github.com/ruban-thilak/concerned_with_zeitwerk"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ruban-thilak/concerned_with_zeitwerk"
@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Add new dependency of your gem
-  spec.add_dependency "rails", ">= 4.2"
+  spec.add_dependency "rails", "~> 4.2"
 end
