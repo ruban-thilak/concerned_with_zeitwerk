@@ -15,6 +15,34 @@ foo.rb
 and include those files in the model file as shown below :
 
 ```ruby
+# foo/associations.rb
+class Foo
+  module Associations
+    extend ActiveSupport::Concern
+
+    # Your associations here
+    end
+end
+
+# foo/validation.rb
+class Foo
+  module Validations
+    extend ActiveSupport::Concern
+
+    # Your validations here
+    end
+end
+
+# foo/callbacks.rb
+class Foo
+  module Callbacks
+    extend ActiveSupport::Concern
+
+    # Your callbacks here
+    end
+end
+
+# foo.rb
 class Foo < ActiveRecord::Base
     extend ConcernedWithZeitwerk
     concerned_with :associations, :validations, :callbacks
